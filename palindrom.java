@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+import javax.lang.model.util.ElementScanner14;
+public class palindrom {
+    public static void main(String[] args) {
+        int r, sum = 0,temp;
+        int n = 1221;
+        temp = n;
+        while (n>0){
+            r = n%10;
+            sum = (sum * 10)+r;
+            n = n/10;
+        }
+        if (temp==sum)
+        System.out.println("palindrome number");
+        else
+        System.out.println("not a palindrome number");
+    }
+}
